@@ -5,21 +5,21 @@
 class Jam < Formula
   desc "Coordinate Claude Code sessions with remote agents and humans on the Band platform"
   homepage "https://github.com/ed-lepedus-thenvoi/jam"
-  version "0.1.13"
+  version "0.1.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ed-lepedus-thenvoi/jam/releases/download/v0.1.13/jam_0.1.13_darwin_amd64.tar.gz"
-      sha256 "919d30cd681e37fef7846b93824dabad54a7c2f56468c275378d0b992f2e4e75"
+      url "https://github.com/ed-lepedus-thenvoi/jam/releases/download/v0.1.14/jam_0.1.14_darwin_amd64.tar.gz"
+      sha256 "14384a91c6f7cbaf3bd4b947f4245d3bd42636e815d5d4d36099c7de478eaf5f"
 
       define_method(:install) do
         bin.install "jam"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ed-lepedus-thenvoi/jam/releases/download/v0.1.13/jam_0.1.13_darwin_arm64.tar.gz"
-      sha256 "820f1cf9cc6c04fcd30751149d0f837ee05ed5cea5fbf43fc7364e7c7815c05a"
+      url "https://github.com/ed-lepedus-thenvoi/jam/releases/download/v0.1.14/jam_0.1.14_darwin_arm64.tar.gz"
+      sha256 "0ee1e85bd462982453a053102eb332615ad3f6686d83875d3e763f6e34bfa0d8"
 
       define_method(:install) do
         bin.install "jam"
@@ -29,15 +29,15 @@ class Jam < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ed-lepedus-thenvoi/jam/releases/download/v0.1.13/jam_0.1.13_linux_amd64.tar.gz"
-      sha256 "5dd4c04eacf866d3e5576c33033aefc64d0f56f32a1d94d3f60b49eba2824ee0"
+      url "https://github.com/ed-lepedus-thenvoi/jam/releases/download/v0.1.14/jam_0.1.14_linux_amd64.tar.gz"
+      sha256 "d4e10ba71097944347bebc4ae8c2d652f56cbef546bfa019937aa2af779a5357"
       define_method(:install) do
         bin.install "jam"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ed-lepedus-thenvoi/jam/releases/download/v0.1.13/jam_0.1.13_linux_arm64.tar.gz"
-      sha256 "cba472fb9609fb8fb3a8697c78beeaa0c46cbb1cb8cb505c84bc1cdee72494c1"
+      url "https://github.com/ed-lepedus-thenvoi/jam/releases/download/v0.1.14/jam_0.1.14_linux_arm64.tar.gz"
+      sha256 "84c8da6265668e8f8fa937edb0bbac7fff87ba9beeca30c245b49efbb5caed32"
       define_method(:install) do
         bin.install "jam"
       end
